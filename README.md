@@ -25,6 +25,7 @@ Test: "It should not count number as words"
 Code: wordCounter("hi there 77 19);
 Expected: output: 2
 
+# Our First Test
 
 Describe: numberOfOccurrencesInText()
 Code: 
@@ -33,7 +34,7 @@ const word = 'red'
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
 
-
+# Our Second Test
 
 Test: "It should return 1 occurrence of a word when the word and the text are the same."
 Code:
@@ -42,9 +43,13 @@ const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 1
 
+# Our Third Test
+
 Test: "It should return 0 occurrences of a word when the word and the text are different."
 Code:
 const text = "red";
 const word = "blue";
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
+
+# Our Fourth Test
