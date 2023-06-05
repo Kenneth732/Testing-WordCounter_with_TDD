@@ -18,5 +18,8 @@ function wordCounter(text){
 
 
 function numberOfOccurrencesInText(text, word){
+    if(word === text){
+        return 1;
+    }
     return 0;
 }
