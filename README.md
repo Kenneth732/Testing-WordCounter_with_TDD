@@ -183,6 +183,12 @@ const occurrences = numberOfOccurrencesInText(word, text);
 console.log(occurrences); // Output: 2
 
 ```
+> So by Defination ```Word and Text ```, 
+- "word" refers to a specific word that you want to search for within a given text.
+- The parameter word is the value that represents the word you want to find occurrences of.
+- "text" refers to the actual text in which you want to search for the specified word. 
+- The parameter text is the value that represents the text you want to search within.
+
 - In this example, the function numberOfOccurrencesInText is called with the word "hello" as the first argument (the word to search for) and the text "Hello there, hello world!" as the second argument (the text to search within). The function will count the occurrences of the word "hello" in the given text and return the result, which is 2 in this case.
 
 # Here is the code for it
