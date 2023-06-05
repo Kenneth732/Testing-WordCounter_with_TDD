@@ -1,6 +1,8 @@
 # BlackCoder@CodeWise.com
 # https://github.com/BlackCoder-CodeWise
 
+- [https://learnhowtoprogram.s3.us-west-2.amazonaws.com/INTRO/week3-branching-looping-arrays/Week-3-2021-images/text-analyzer-bug.gif]
+
 # Our First Test
 Describe: wordCounter()
 
