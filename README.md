@@ -101,6 +101,32 @@ Expected Output: 0
 
 
 
+# Here is the HTML Code for this BS
+```
+    <div class="container">
+        <h2>Text Analyzer</h2>
+        
+        <form id="word-counter">
+            <div class="form-group">
+                <p>Input a text passage to get a total word count:</p>
+                <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+                <p>Optionally enter a word to count the number of times it occurs in the passage:</p>
+                <input type="text" id="word" name="word" class="form-control">
+                <br />
+                <button type="submit" class="btn btn-success">Submit Survey</button>
+            </div>
+        </form>
+        <p>Total Word Count: <span id="total-count"></span></p>
+        <br />
+        <p>Selected Word Count: <span id="selected-count"></span></p>
+        <div id="bolded-passage">
+
+        </div>
+    </div>
+    <script src="static/js/app.js"></script>
+</body>
+```
+
 # wordCounter function:
 
 > This function takes a text parameter as input.
@@ -216,3 +242,4 @@ function numberOfOccurrencesInText(word, text) {
 ```
 
 - Both functions are related to counting words in a text, but they use slightly different approaches. The wordCounter function counts the total number of words in a text, while the numberOfOccurrencesInText function counts the occurrences of a specific word in a text.
+
