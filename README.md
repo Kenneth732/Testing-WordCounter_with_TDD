@@ -84,3 +84,48 @@ Code:
 const word = "Red"
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
+
+
+
+
+# wordCounter function:
+
+> This function takes a text parameter as input.
+```
+function wordCounter(text) {}
+```
+> It first checks if the trimmed text has a length of 0 (i.e., if it is empty or contains only whitespace). If so, it returns 0 as there are no words to count.
+```
+    if (text.trim().length === 0) {
+        return 0;
+    }
+```
+> It initializes a variable wordCounter to keep track of the word count.
+```
+    let wordCounter = 0;
+```
+> The text is split into an array of characters using split("").
+> It then iterates over each element in the textArray using forEach and checks if the element is not a number using !Number(element).
+```
+const textArray = text.split(" ")
+```
+> If the element is not a number (i.e., it is a word), it increments the wordCounter by 1.
+> Finally, it returns the wordCounter, which represents the total number of words in the text.
+
+```
+function wordCounter(text) {
+    if (text.trim().length === 0) {
+        return 0;
+    }
+
+    let wordCounter = 0;
+    const textArray = text.split(" ")
+    textArray.forEach(function (element) {
+        if (!Number(element)) {
+            wordCounter++;
+        };
+    });
+    return wordCounter;
+}
+
+```

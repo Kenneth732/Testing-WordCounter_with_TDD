@@ -6,7 +6,7 @@ function wordCounter(text) {
     }
 
     let wordCounter = 0;
-    const textArray = text.split("")
+    const textArray = text.split(" ")
     textArray.forEach(function (element) {
         if (!Number(element)) {
             wordCounter++;
