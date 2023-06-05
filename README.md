@@ -53,3 +53,10 @@ numberOfOccurrencesInText(word, text);
 Expected Output: 0
 
 # Our Fourth Test
+
+Test: "It should return the number of occurrences of a word."
+Code:
+const text = "red blue red red red green";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 4

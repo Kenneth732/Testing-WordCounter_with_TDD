@@ -17,9 +17,14 @@ function wordCounter(text){
 
 
 
-function numberOfOccurrencesInText(text, word){
-    if(word === text){
-        return 1;
-    }
-    return 0;
+function numberOfOccurrencesInText(word ,text){
+    const textArray = text.split(" ");
+
+    let wordCounter = 0;
+    textArray.forEach(function(element){
+        if (element === element){
+            wordCounter++;
+        }
+    })
+    return wordCounter;
 }
