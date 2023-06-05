@@ -176,3 +176,5 @@ function numberOfOccurrencesInText(word, text) {
     return wordCount;
 }
 ```
+
+- Both functions are related to counting words in a text, but they use slightly different approaches. The wordCounter function counts the total number of words in a text, while the numberOfOccurrencesInText function counts the occurrences of a specific word in a text.
