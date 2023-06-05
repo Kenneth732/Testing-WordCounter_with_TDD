@@ -38,3 +38,7 @@ function handleFormSubmission() {
     document.getElementById("total-count").innerText = wordCount;
     document.getElementById("selected-count").innerText = occurrencesOfWord;
 }
+
+window.addEventListener('load', () => {
+    document.querySelector("form#word-counter").addEventListener("submit", handleFormSubmission);
+});
