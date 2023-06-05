@@ -26,3 +26,10 @@ function numberOfOccurrencesInText(word, text) {
     });
     return wordCount;
 }
+
+
+
+const word = 'hello';
+const text = 'Hello there, hello world!';
+const occurrences = numberOfOccurrencesInText(word, text);
+console.log(occurrences); // Output: 2

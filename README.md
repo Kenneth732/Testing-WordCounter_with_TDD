@@ -163,6 +163,25 @@ It initializes a variable wordCount to keep track of the number of occurrences o
     return wordCount;
 ```
 
+> Wait a minu.. what the heck is going on here with this code? numberOfOccurrencesInText function
+- what is the use of two paramenters? word and text
+> Well, let dive deep into it and unlock the mystery story of it:
+
+- In the context of the numberOfOccurrencesInText function, the word "word" refers to a specific word that you want to search for within a given text. The parameter word is the value that represents the word you want to find occurrences of.
+
+- Similarly, the word "text" refers to the actual text in which you want to search for the specified word. The parameter text is the value that represents the text you want to search within.
+
+- So when you call the numberOfOccurrencesInText function, you provide two arguments: the first argument is the specific word you want to search for, and the second argument is the text in which you want to perform the search.
+> For example:
+```
+const word = 'hello';
+const text = 'Hello there, hello world!';
+const occurrences = numberOfOccurrencesInText(word, text);
+console.log(occurrences); // Output: 2
+
+```
+- In this example, the function numberOfOccurrencesInText is called with the word "hello" as the first argument (the word to search for) and the text "Hello there, hello world!" as the second argument (the text to search within). The function will count the occurrences of the word "hello" in the given text and return the result, which is 2 in this case.
+
 # Here is the code for it
 ```
 function numberOfOccurrencesInText(word, text) {
