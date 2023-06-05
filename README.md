@@ -113,6 +113,11 @@ const textArray = text.split(" ")
 > Finally, it returns the wordCounter, which represents the total number of words in the text.
 
 ```
+    return wordCounter;
+```
+
+# Here is the code for it
+```
 function wordCounter(text) {
     if (text.trim().length === 0) {
         return 0;
@@ -128,4 +133,46 @@ function wordCounter(text) {
     return wordCounter;
 }
 
+```
+
+# numberOfOccurrencesInText function:
+
+> This function takes two parameters: word (the word to search for) and text (the text to search within).
+
+```
+function numberOfOccurrencesInText(word, text) {}
+```
+> It splits the text into an array of words using split(" ").
+It initializes a variable wordCount to keep track of the number of occurrences of the word.
+```
+ const textArray = text.split(" ");
+```
+
+> The textArray is iterated over using forEach, and for each element (a word), it checks if the lowercase version of the element includes the lowercase version of the word using element.toLowerCase().includes(word.toLowerCase()).
+
+```
+    textArray.forEach(function (element) {
+        if (element.toLowerCase().includes(word.toLowerCase())) {
+            wordCount++;
+        }
+    });
+```
+> If the word is found (case-insensitive), it increments the wordCount by 1.
+> Finally, it returns the wordCount, which represents the total number of occurrences of the word in the text.
+```
+    return wordCount;
+```
+
+# Here is the code for it
+```
+function numberOfOccurrencesInText(word, text) {
+    const textArray = text.split(" ");
+    let wordCount = 0;
+    textArray.forEach(function (element) {
+        if (element.toLowerCase().includes(word.toLowerCase())) {
+            wordCount++;
+        }
+    });
+    return wordCount;
+}
 ```
