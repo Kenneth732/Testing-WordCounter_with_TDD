@@ -10,8 +10,8 @@ function wordCounter(text){
     textArray.forEach(function(element){
         if (!Number(element)){
             wordCounter++;
-        }
-    })
+        };
+    });
     return wordCounter;
 }
 
@@ -22,9 +22,9 @@ function numberOfOccurrencesInText(word ,text){
 
     let wordCounter = 0;
     textArray.forEach(function(element){
-        if (element === element){
+        if (word.toLowerCase() === element.toLowerCase()){
             wordCounter++;
-        }
-    })
+        };
+    });
     return wordCounter;
 }
