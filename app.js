@@ -7,11 +7,16 @@ function wordCounter(text){
 
     let wordCounter = 0;
     const textArray = text.split("")
-    textArray.forEach(function(word){
-        wordCounter++;
+    textArray.forEach(function(element){
+        if (!Number(element)){
+            wordCounter++;
+        }
     })
     return wordCounter;
 }
 
 
 
+function numberOfOccurrencesInText(text, word){
+    return 0;
+}

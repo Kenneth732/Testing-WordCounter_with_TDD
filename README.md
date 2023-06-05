@@ -24,3 +24,14 @@ Expected Output: 0
 Test: "It should not count number as words"
 Code: wordCounter("hi there 77 19);
 Expected: output: 2
+
+
+Describe: numberOfOccurrencesInText()
+Code: 
+const text = ''
+const word = 'red'
+numberOfOccurrencesInText(word, text);
+Expected Output: 0
+
+
+
