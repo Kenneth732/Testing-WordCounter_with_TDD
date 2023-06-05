@@ -1,3 +1,6 @@
+# BlackCoder@CodeWise.com
+# https://github.com/BlackCoder-CodeWise
+
 # Our First Test
 Describe: wordCounter()
 
