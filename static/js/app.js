@@ -28,3 +28,11 @@ function numberOfOccurrencesInText(word, text) {
 
 
 // UI Logic
+
+function handleFormSubmission() {
+    e.preventDefault();
+    const passage = document.getElementById('text-passage').value;
+    const word = document.getElementById('word').value;
+    const wordCount = wordCounter(passage);
+    
+}
